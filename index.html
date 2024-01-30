@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora de média</title>
+   
+   <!--ADICIONA A FAMÍLIA DA FONTE DO GOOGLE "ROBOTO" NORMAL E NEGRITO-->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+   <!--ADICIONA O CSS EXTERNO AO HTML-->
+   <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+   <!--CONTAINER DIV-->
+   <div class="container">
+      <!--CABEÇALHO-->
+      <header>
+         <img src="./images/logo.png" alt="Chapéu e Diploma">
+         <h1>Calculadora de média</h1>
+      </header>
+   
+      <!--FORMULÁRIO-->
+      <form id="form-atividade">
+         <input type="text" id="nome-atividade" required placeholder="Nome da atividade:" autofocus>
+         <input type="number" id="nota-atividade" min="0" max="10" required placeholder="Nota">
+         <button type="submit">Adicionar +</button>
+      </form>
+   
+      <!--CRIA UMA TABELA-->
+      <table cellspacing= "0">
+         <thead> <!--CABEÇALHO DA TABELA DOm-->
+            <tr>
+               <th> 
+                  Nome da atividade
+               </th>
+               <th>
+                  Nota da atividade
+               </th>
+               <th>
+                  Aprovado?
+               </th>
+            </tr>
+         </thead>
+   
+         <tbody> <!--CORPO DA TABELA-->
+            
+         </tbody>
+   
+         <tfoot> <!--RODAPÉ DA TAELA-->
+            <tr>
+               <td>
+                  Média final
+               </td>
+               <td id="media-final-valor">---</td>
+               <td id="media-final-resultado">---</td>
+            </tr>
+         </tfoot>
+      </table>   <!-- FINAL DA TABELA-->
+   </div> <!--FINAL DO CONTAINER-->
+
+   <!--LIGANDO O JAVASCRIPT AO HTmL-->
+   <script src="./main.js"></script>
+</body>
+</html>
